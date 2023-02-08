@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+         	<servlet-name>ViewMenu</servlet-name>
+         	<servlet-class>com.order.menuServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>ViewMenu</servlet-name>
+         	<url-pattern>/menu</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         	<servlet-name>AddToCart</servlet-name>
+         	<servlet-class>com.order.addToCartServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>AddToCart</servlet-name>
+         	<url-pattern>/addToCart</url-pattern>
+         </servlet-mapping>
+         
+        
+         
+    <servlet>
+         	<servlet-name>ViewCart</servlet-name>
+         	<servlet-class>com.order.viewCartServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>ViewCart</servlet-name>
+         	<url-pattern>/cart</url-pattern>
+         </servlet-mapping>
+
+
+            <servlet>
+         	<servlet-name>removeFood</servlet-name>
+         	<servlet-class>com.order.removeCartServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>removeFood</servlet-name>
+         	<url-pattern>/removeCart</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         	<servlet-name>addCustomerCard</servlet-name>
+         	<servlet-class>com.order.addCardServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>addCustomerCard</servlet-name>
+         	<url-pattern>/addCard</url-pattern>
+         </servlet-mapping>
+         
+          <servlet>
+         	<servlet-name>viewCustomerCard</servlet-name>
+         	<servlet-class>com.order.viewCardServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>viewCustomerCard</servlet-name>
+         	<url-pattern>/viewCard</url-pattern>
+         </servlet-mapping>
+         
+         <servlet>
+         	<servlet-name>updateCustomerCard</servlet-name>
+         	<servlet-class>com.order.updateCardServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>updateCustomerCard</servlet-name>
+         	<url-pattern>/updateCard</url-pattern>
+         </servlet-mapping>
+                                    
+         
+          <servlet>
+         	<servlet-name>deleteCustomerCard</servlet-name>
+         	<servlet-class>com.order.deleteCardServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>deleteCustomerCard</servlet-name>
+         	<url-pattern>/deleteCard</url-pattern>
+         </servlet-mapping>
+         
+      
+         
+          <servlet>
+         	<servlet-name>scheduleOrderPlace</servlet-name>
+         	<servlet-class>com.order.addScheduleOrderServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>scheduleOrderPlace</servlet-name>
+         	<url-pattern>/scheduleOrder</url-pattern>
+         </servlet-mapping>
+         
+         
+         
+         
+         
+         
+          <servlet>
+         	<servlet-name>orderPlace</servlet-name>
+         	<servlet-class>com.order.orderPlaceServlet</servlet-class>
+         </servlet>
+         <servlet-mapping>
+         	<servlet-name>orderPlace</servlet-name>
+         	<url-pattern>/orderNow</url-pattern>
+         </servlet-mapping>
+         
+         
+ </web-app>
